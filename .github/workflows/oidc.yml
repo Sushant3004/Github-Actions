@@ -19,7 +19,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v6.3.0
         with:
-          aws-region: us-east-1
+          aws-region: ap-south-1
+          audience: sts.amazonaws.com.cn
           role-to-assume: arn:aws:iam::952938537163:role/GithubAction-OIDC-Role
      
       - name: Additional steps
